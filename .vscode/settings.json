@@ -1,0 +1,13 @@
+{
+    "files.associations": {
+        "*.ndjson": "jsonl",
+        "*.dbclient-js": "javascript",
+        "CMakeLists.txt": "cmake",
+        "*.cmake": "cmake",
+        "iostream": "cpp",
+        "chrono": "cpp",
+        "atomic": "cpp"
+    },
+    "cmake.sourceDirectory": "/home/gao/code",
+    "cmake.configureOnEdit": false
+}
