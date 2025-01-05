@@ -8,6 +8,6 @@
         "chrono": "cpp",
         "atomic": "cpp"
     },
-    "cmake.sourceDirectory": "/home/gao/code",
+    "cmake.sourceDirectory": "/home/gao/code/chatserver",
     "cmake.configureOnEdit": false
 }

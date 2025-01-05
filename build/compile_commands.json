@@ -1,0 +1,52 @@
+[
+{
+  "directory": "/home/gao/code/chatserver/build",
+  "command": "/usr/bin/g++ -I/home/gao/code/chatserver/include -I/home/gao/code/chatserver/include/server -I/home/gao/code/chatserver/include/server/db -I/home/gao/code/chatserver/include/server/model -I/home/gao/code/chatserver/include/server/redis -I/home/gao/code/chatserver/thirdparty -g -g -o src/server/CMakeFiles/ChatServer.dir/chatserver.cpp.o -c /home/gao/code/chatserver/src/server/chatserver.cpp",
+  "file": "/home/gao/code/chatserver/src/server/chatserver.cpp"
+},
+{
+  "directory": "/home/gao/code/chatserver/build",
+  "command": "/usr/bin/g++ -I/home/gao/code/chatserver/include -I/home/gao/code/chatserver/include/server -I/home/gao/code/chatserver/include/server/db -I/home/gao/code/chatserver/include/server/model -I/home/gao/code/chatserver/include/server/redis -I/home/gao/code/chatserver/thirdparty -g -g -o src/server/CMakeFiles/ChatServer.dir/chatservice.cpp.o -c /home/gao/code/chatserver/src/server/chatservice.cpp",
+  "file": "/home/gao/code/chatserver/src/server/chatservice.cpp"
+},
+{
+  "directory": "/home/gao/code/chatserver/build",
+  "command": "/usr/bin/g++ -I/home/gao/code/chatserver/include -I/home/gao/code/chatserver/include/server -I/home/gao/code/chatserver/include/server/db -I/home/gao/code/chatserver/include/server/model -I/home/gao/code/chatserver/include/server/redis -I/home/gao/code/chatserver/thirdparty -g -g -o src/server/CMakeFiles/ChatServer.dir/main.cpp.o -c /home/gao/code/chatserver/src/server/main.cpp",
+  "file": "/home/gao/code/chatserver/src/server/main.cpp"
+},
+{
+  "directory": "/home/gao/code/chatserver/build",
+  "command": "/usr/bin/g++ -I/home/gao/code/chatserver/include -I/home/gao/code/chatserver/include/server -I/home/gao/code/chatserver/include/server/db -I/home/gao/code/chatserver/include/server/model -I/home/gao/code/chatserver/include/server/redis -I/home/gao/code/chatserver/thirdparty -g -g -o src/server/CMakeFiles/ChatServer.dir/db/db.cpp.o -c /home/gao/code/chatserver/src/server/db/db.cpp",
+  "file": "/home/gao/code/chatserver/src/server/db/db.cpp"
+},
+{
+  "directory": "/home/gao/code/chatserver/build",
+  "command": "/usr/bin/g++ -I/home/gao/code/chatserver/include -I/home/gao/code/chatserver/include/server -I/home/gao/code/chatserver/include/server/db -I/home/gao/code/chatserver/include/server/model -I/home/gao/code/chatserver/include/server/redis -I/home/gao/code/chatserver/thirdparty -g -g -o src/server/CMakeFiles/ChatServer.dir/model/friendmodel.cpp.o -c /home/gao/code/chatserver/src/server/model/friendmodel.cpp",
+  "file": "/home/gao/code/chatserver/src/server/model/friendmodel.cpp"
+},
+{
+  "directory": "/home/gao/code/chatserver/build",
+  "command": "/usr/bin/g++ -I/home/gao/code/chatserver/include -I/home/gao/code/chatserver/include/server -I/home/gao/code/chatserver/include/server/db -I/home/gao/code/chatserver/include/server/model -I/home/gao/code/chatserver/include/server/redis -I/home/gao/code/chatserver/thirdparty -g -g -o src/server/CMakeFiles/ChatServer.dir/model/groupmodel.cpp.o -c /home/gao/code/chatserver/src/server/model/groupmodel.cpp",
+  "file": "/home/gao/code/chatserver/src/server/model/groupmodel.cpp"
+},
+{
+  "directory": "/home/gao/code/chatserver/build",
+  "command": "/usr/bin/g++ -I/home/gao/code/chatserver/include -I/home/gao/code/chatserver/include/server -I/home/gao/code/chatserver/include/server/db -I/home/gao/code/chatserver/include/server/model -I/home/gao/code/chatserver/include/server/redis -I/home/gao/code/chatserver/thirdparty -g -g -o src/server/CMakeFiles/ChatServer.dir/model/offlinemessagemodel.cpp.o -c /home/gao/code/chatserver/src/server/model/offlinemessagemodel.cpp",
+  "file": "/home/gao/code/chatserver/src/server/model/offlinemessagemodel.cpp"
+},
+{
+  "directory": "/home/gao/code/chatserver/build",
+  "command": "/usr/bin/g++ -I/home/gao/code/chatserver/include -I/home/gao/code/chatserver/include/server -I/home/gao/code/chatserver/include/server/db -I/home/gao/code/chatserver/include/server/model -I/home/gao/code/chatserver/include/server/redis -I/home/gao/code/chatserver/thirdparty -g -g -o src/server/CMakeFiles/ChatServer.dir/model/usermodel.cpp.o -c /home/gao/code/chatserver/src/server/model/usermodel.cpp",
+  "file": "/home/gao/code/chatserver/src/server/model/usermodel.cpp"
+},
+{
+  "directory": "/home/gao/code/chatserver/build",
+  "command": "/usr/bin/g++ -I/home/gao/code/chatserver/include -I/home/gao/code/chatserver/include/server -I/home/gao/code/chatserver/include/server/db -I/home/gao/code/chatserver/include/server/model -I/home/gao/code/chatserver/include/server/redis -I/home/gao/code/chatserver/thirdparty -g -g -o src/server/CMakeFiles/ChatServer.dir/redis/redis.cpp.o -c /home/gao/code/chatserver/src/server/redis/redis.cpp",
+  "file": "/home/gao/code/chatserver/src/server/redis/redis.cpp"
+},
+{
+  "directory": "/home/gao/code/chatserver/build",
+  "command": "/usr/bin/g++ -I/home/gao/code/chatserver/include -I/home/gao/code/chatserver/include/server -I/home/gao/code/chatserver/include/server/db -I/home/gao/code/chatserver/include/server/model -I/home/gao/code/chatserver/include/server/redis -I/home/gao/code/chatserver/thirdparty -g -g -o src/client/CMakeFiles/ChatClient.dir/main.cpp.o -c /home/gao/code/chatserver/src/client/main.cpp",
+  "file": "/home/gao/code/chatserver/src/client/main.cpp"
+}
+]
