@@ -6,7 +6,8 @@
         "*.cmake": "cmake",
         "iostream": "cpp",
         "chrono": "cpp",
-        "atomic": "cpp"
+        "atomic": "cpp",
+        "limits": "cpp"
     },
     "cmake.sourceDirectory": "/home/gao/code/chatserver",
     "cmake.configureOnEdit": false
