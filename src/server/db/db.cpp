@@ -4,7 +4,7 @@
 // 数据库配置信息
 static string server = "127.0.0.1";
 static string user = "root";
-static string password = "123456";
+static string password = "root";
 static string dbname = "chat";
 
 MySQL::MySQL() {

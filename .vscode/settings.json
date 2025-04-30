@@ -21,6 +21,6 @@
         "tuple": "cpp",
         "typeinfo": "cpp"
     },
-    "cmake.sourceDirectory": "/home/gao/code/chatserver",
+    "cmake.sourceDirectory": "/root/Code/chatserver",
     "cmake.configureOnEdit": false
 }
