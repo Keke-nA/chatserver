@@ -1,47 +1,47 @@
 #ifndef REDIS_H
 #define REDIS_H
 
-#include <hiredis/hiredis.h>
 #include <functional>
-#include <thread>
-using namespace std;
+#include <hiredis/hiredis.h>
+#include <string>
 
-/*
-redis作为集群服务器通信的基于发布-订阅消息队列时，会遇到两个难搞的bug问题，参考我的博客详细描述：
-https://blog.csdn.net/QIANGWEIYUAN/article/details/97895611
-*/
+// Redis操作类
+// 负责与Redis服务器通信，实现基于发布-订阅模式的跨服务器通信
+// 用于集群环境下的消息分发
 class Redis {
-   public:
+  public:
     Redis();
     ~Redis();
 
-    // 连接redis服务器
+    // 连接Redis服务器
+    // 初始化publish和subscribe两个上下文连接
     bool connect();
 
-    // 向redis指定的通道channel发布消息
-    bool publish(int channel, string message);
+    // 向指定通道发布消息
+    // channel: 通道ID, message: 消息内容
+    bool publish(int channel, std::string message);
 
-    // 向redis指定的通道subscribe订阅消息
+    // 订阅指定通道的消息
+    // 开始接收channel通道的消息
     bool subscribe(int channel);
 
-    // 向redis指定的通道unsubscribe取消订阅消息
+    // 取消订阅指定通道
+    // 停止接收channel通道的消息
     bool unsubscribe(int channel);
 
-    // 在独立线程中接收订阅通道中的消息
+    // 在独立线程中监听订阅通道的消息
+    // 接收到消息后通过回调函数处理
     void observer_channel_message();
 
-    // 初始化向业务层上报通道消息的回调对象
-    void init_notify_handler(function<void(int, string)> fn);
+    // 设置消息处理的回调函数
+    // 当收到订阅消息时，调用该函数处理
+    void init_notify_handler(std::function<void(int, std::string)> fn);
 
-   private:
-    // hiredis同步上下文对象，负责publish消息
-    redisContext* _publish_context;
-
-    // hiredis同步上下文对象，负责subscribe消息
-    redisContext* _subcribe_context;
-
-    // 回调操作，收到订阅的消息，给service层上报
-    function<void(int, string)> _notify_message_handler;
+  private:
+    redisContext* _publish_context;  // 发布消息的上下文连接
+    redisContext* _subcribe_context; // 订阅消息的上下文连接
+    std::function<void(int, std::string)>
+        _notify_message_handler; // 消息处理回调函数
 };
 
 #endif

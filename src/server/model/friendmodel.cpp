@@ -14,20 +14,21 @@ void FriendModel::insert(int userid, int friendid) {
 }
 
 // 返回用户好友列表  friendid
-vector<User> FriendModel::query(int userid) {
+std::vector<User> FriendModel::query(int userid) {
     // 1.sql语句
     char sql[1024] = {0};
-    sprintf(sql,
-            "select a.id, a.name, a.state from User a inner join Friend b on "
-            "b.friendid = a.id where b.userid = %d",
-            userid);
+    sprintf(
+        sql,
+        "select a.id, a.name, a.state from User a inner join Friend b on "
+        "b.friendid = a.id where b.userid = %d",
+        userid);
 
-    vector<User> vec;
+    std::vector<User> vec;
     MySQL mysql;
     if (mysql.connect()) {
         MYSQL_RES* res = mysql.query(sql);
         if (res != nullptr) {
-            // 把userid用户的所有离线消息放入vec中返回
+            // 把userid用户的所有好友信息放入vec中返回
             MYSQL_ROW row;
             while ((row = mysql_fetch_row(res)) != nullptr) {
                 User user;
