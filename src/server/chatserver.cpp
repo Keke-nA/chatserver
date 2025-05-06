@@ -11,7 +11,7 @@ using namespace std::placeholders;
 ChatServer::ChatServer(
     EventLoop* loop, const InetAddress& listenAddr, const std::string& nameArg)
     : _server(loop, listenAddr, nameArg), _loop(loop) {
-    // 注册链接回调
+    // 注册连接回调
     _server.setConnectionCallback(std::bind(&ChatServer::onConnection, this, _1));
     // 注册消息回调
     _server.setMessageCallback(std::bind(&ChatServer::onMessage, this, _1, _2, _3));
